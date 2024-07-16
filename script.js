@@ -81,16 +81,33 @@
 
 
 
-// fourth question
+// // fourth question
 
 
-// function counter(str){
-//     let obj={};
-    
+// function cc(str) {
+//   let counter = {};
 
+//   for (let i = 0; i < str.length; i++) {
+//     let char = str[i];
+//     let count = 1;
+//     if (counter[char] !== undefined) {
+//       continue;
+//     }
 
+//     for (let j = i + 1; j < str.length; j++) {
+//       if (char === str[j]) {
+//         count++;
+//       }
+//     }
 
+//     counter = { ...counter, [char]: count };
+//   }
+
+//   console.log(counter);
 // }
+
+// cc("adsfasdfaf");
+
 
 
 
@@ -125,17 +142,17 @@
 
 // sixth question
 
-function factorial(num){
-    let fac=1;
-    for(let i=1;i<=num;i++){
-        fac=fac*i;
-    }
+// function factorial(num){
+//     let fac=1;
+//     for(let i=1;i<=num;i++){
+//         fac=fac*i;
+//     }
 
-    return fac;
-}
+//     return fac;
+// }
 
 
-console.log(factorial(5));
+// console.log(factorial(5));
 
 
 // // seventh question
@@ -154,22 +171,22 @@ console.log(factorial(5));
 
 
 
-// // 8th question
+// 8th question
 
-// function missing(arr){
-// let count=0;
-// let j=0;
+function missing(arr){
+let count=0;
+let j=0;
 
-// for(let i=0;i<arr.length;i++){
-//     j=i-count;
-//     if(arr[j]!=i){
-//         console.log(i);
-//         count++;
-//     }
-// }
-
-
-// }
+for(let i=0;i<arr.length;i++){
+    j=i-count;
+    if(arr[j]!=i){
+        console.log(i);
+        count++;
+    }
+}
 
 
-// missing([0,1,2,3,5])
+}
+
+
+missing([0,1,2,3,5])
